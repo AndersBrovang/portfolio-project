@@ -94,7 +94,7 @@ portfolio_annual_vol    = portfolio_returns.std() * np.sqrt(252)
 Beta measures how strongly a stock tends to move when the market moves. It is the covariance between
 the stock and the market, divided by the variance of the market:
 
-$$\beta_i = \frac{\operatorname{Cov}(r_i, r_m)}{\operatorname{Var}(r_m)}$$
+$$\beta_i = \frac{\text{Cov}(r_i, r_m)}{\text{Var}(r_m)}$$
 
 This is the same value as the slope of a linear regression of the stock's returns on the market's
 returns, which I found helpful, because it turns beta from a finance formula into a statistics one.
