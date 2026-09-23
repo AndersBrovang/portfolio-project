@@ -206,5 +206,3 @@ The results rest on a number of assumptions, and most of them are simplification
 - [ ] **Correlation heatmap** to make the effect of diversification visible
 - [ ] **Downside risk measures**: Sortino ratio, maximum drawdown and historical VaR
 - [ ] **Rolling beta** to show how much beta changes over time
-- [ ] **Unit tests** checking the calculations against values worked out by hand
-- [ ] **Deploy to Streamlit Community Cloud**
