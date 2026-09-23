@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --accent: #178C6B;
+    --text: #1A1A1A;
+    --muted: #6B7280;
+    --hairline: #E4E9E7;
+}
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.hairline {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 0.4rem 0 1.5rem 0;
+}
+
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.5rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.1rem;
+}
+
+.page-subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+[data-testid="stMetric"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--hairline);
+    border-radius: 0;
+    padding: 0.5rem 0 0.75rem 0;
+    transition: border-color 0.2s ease;
+}
+[data-testid="stMetric"]:hover {
+    border-bottom: 1px solid var(--accent);
+}
+[data-testid="stMetricLabel"] {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    color: var(--muted);
+}
+[data-testid="stMetricValue"] {
+    color: var(--text);
+    font-weight: 600;
+}
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--hairline) !important;
+    border-radius: 0 !important;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
